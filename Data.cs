@@ -9,39 +9,7 @@ namespace ImportExportData
 {
     public partial class Data : Form
     {
-        private DataTable _dt = new DataTable();
-
-        public Data()
-        {
-            InitializeComponent();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-            this.CenterToScreen();
-            this.SetControls();
-        }
-
-        private void SetControls()
-        {
-            //Form
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-
-            //Labels
-            this.lblSearch.Text = "Search Criteria";
-
-            //Set Radio Button Default
-            this.rbLocation.Checked = true;
-
-            //Set record count
-            this.lblTotal.Text = "0";
-        }
-       
-       public class Program
-{
-
+    
     /*
        public static void evaluate() {
            int x = 10;
@@ -80,6 +48,40 @@ namespace ImportExportData
         }
     }
     */
+        private DataTable _dt = new DataTable();
+
+        public Data()
+        {
+            InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.CenterToScreen();
+            this.SetControls();
+        }
+
+        private void SetControls()
+        {
+            //Form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            //Labels
+            this.lblSearch.Text = "Search Criteria";
+
+            //Set Radio Button Default
+            this.rbLocation.Checked = true;
+
+            //Set record count
+            this.lblTotal.Text = "0";
+        }
+       
+       public class Program
+{
+
+    
 
 
         private void btnImportExcel_Click(object sender, EventArgs e)
