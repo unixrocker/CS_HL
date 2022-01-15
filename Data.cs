@@ -38,6 +38,49 @@ namespace ImportExportData
             //Set record count
             this.lblTotal.Text = "0";
         }
+       
+       public class Program
+{
+
+    /*
+       public static void evaluate() {
+           int x = 10;
+           bool areCompaniesSimilar = true;
+           int similarityCount = 0;
+           for (int i = 0; i < matrix.GetLength(0); i++) {
+               for (int j = 0; j < matrix.GetLength(1); j++) {
+                   similarityCount = 0;
+                   bool didCompany1MoveUp = true;
+                   bool didCompany2MoveUp = true;
+                   var company1day1 = matrix[i, j];
+                   var company2day1 = matrix[i+1, j];
+                   var company1day2 = matrix[i, j+1];
+                   var company2day2 = matrix[i+1, j+1];
+
+                   if (company1day2 - company1day1 >= 0) {
+                       didCompany1MoveUp = true;
+                    }
+                    else
+                        didCompany1MoveUp = false;
+
+                    if (company2day2 - company2day1 >= 0) {
+                        didCompany2MoveUp = true;
+                    }
+                    else
+                        didCompany2MoveUp = false;
+
+                    if (didCompany1MoveUp == didCompany2MoveUp) {
+                        similarityCount++;
+                    }
+                }
+            }
+            if (similarityCount >= x) {
+                areCompaniesSimilar = true;
+            }
+        }
+    }
+    */
+
 
         private void btnImportExcel_Click(object sender, EventArgs e)
         {
